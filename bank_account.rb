@@ -22,4 +22,8 @@ class BankAccount
     def withdraw(amount)
       @balance = @balance - amount
     end
+
+    def gain_interest
+      @balance = (@interest_rate/100.0)*@balance + @balance
+    end
 end
