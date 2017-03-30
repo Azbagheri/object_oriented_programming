@@ -5,6 +5,17 @@ attr_reader :name, :experience, :earnings
 def initialize(name, experience, earnings)
   @name = name
   @experience = experience
-  @earning = earnings
+  @earnings = earnings
+end
+
+def quota
+  base = 50
+  quota = base + @experience/2
+  "Quota is #{quota}"
+end
+
+
+
+
 
 end
